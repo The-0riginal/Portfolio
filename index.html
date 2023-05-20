@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: black;
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(7, 23, 24);
+        height: 60px;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0px 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: lavender;
+        font-size: 1.01rem;
+      }
+      main hr {
+        border: 0;
+        background: rgb(93, 21, 160);
+        height: 1.2px;
+        margin: 40px 100px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 130px 0;
+      }
+      .firstSection > div {
+        width: 30%;
+      }
+      .leftSection {
+        font-size: 2rem;
+      }
+      .leftSection .button{
+        padding: 20px 0;
+      }
+      .leftSection .btn {
+        padding: 10px;
+        background: #761576;
+        color: white;
+        border: 1px solid white;
+        border-radius: 6px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      .rightSection img {
+        width: 100%;
+      }
+      .purple {
+        color: blueviolet;
+      }
+      #element {
+        color: blueviolet;
+      }
+      .text-grey {
+        color: gray;
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection h1 {
+        font-size: 1.7rem;
+      }
+      .secondSection .box {
+        display: flex;
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 40px 0;
+      }
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 100px;
+      }
+      .image-top {
+        position: relative;
+        top: -32px;
+        left: -9px;
+        width: 23px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 171px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 80px;
+        color: gray;
+        width: 170px;
+        font-size: 11px;
+      }
+      footer {
+        background-color: rgb(12, 18, 19);
+      }
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer ul {
+        list-style: none;
+      }
+      .footer > div {
+        width: 123px;
+      }
+      footer .footer-rights {
+        text-align: center;
+        color: grey;
+        padding: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Abhishek's portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple"> Abhishek</span>
+          <div class="">And I am a passionate</div>
+          <span id="element"></span>
+          <div class="button">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="./images/bg.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="text-grey">What I have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img src="./images/youtube.png" class="image-top" alt="" />
+            <div class="vertical-title">
+              Clip Finder - Youtube (Dec,2022-Feb,2023)
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, in
+              pariatur! Consectetur natus fugit velit error consequuntur
+              necessitatibus fugiat tenetur suscipit dolore sit?
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="./images/coldfusion.png" class="image-top" alt="" />
+            <div class="vertical-title">
+              Cf Engineer - Kandid (Mar,2023-Present)
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, in
+              pariatur! Consectetur natus fugit velit error consequuntur
+              necessitatibus fugiat tenetur suscipit dolore sit?
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="./images/developer.png" class="image-top" alt="" />
+            <div class="vertical-title">
+              Looking forward to another opportunities
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, in
+              pariatur! Consectetur natus fugit velit error consequuntur
+              necessitatibus fugiat tenetur suscipit dolore sit?
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Abhishek' Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>services</li>
+            <li>Contact Me</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>services</li>
+            <li>Contact Me</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>services</li>
+            <li>Contact Me</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyright &#169; www.Abhisheksportfolio.com | All rights reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["MERN stack developer", "Coldfusion Developer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
